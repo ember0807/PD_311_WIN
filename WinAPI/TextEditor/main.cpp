@@ -101,6 +101,14 @@ INT CALLBACK WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 		);
 	}
 	break;
+	case WM_SIZE:
+{
+    RECT clientRect;
+    GetClientRect(hwnd, &clientRect);
+    HWND hEdit = GetDlgItem(hwnd, IDC_EDIT);
+    SetWindowPos(hEdit, NULL, 10, 10, clientRect.right-20, clientRect.bottom-20, SWP_NOZORDER);
+}
+break;
 	case WM_COMMAND:
 		break;
 	case WM_DESTROY:
