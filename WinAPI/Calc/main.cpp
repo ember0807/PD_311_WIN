@@ -99,7 +99,7 @@ VOID SetSkinFromDLL(HWND hwnd, LPSTR skin);
 
 INT CALLBACK WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
-	static CONST CHAR DEFAULT_SKIN[] = "square_blue";
+	static CONST CHAR DEFAULT_SKIN[] = "ButtonsDLL\\square_blue";
 	static CHAR skin[MAX_PATH]{};
 	static COLOR color_scheme = COLOR::BLUE;
 

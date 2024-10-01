@@ -1,7 +1,12 @@
-
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by Resource.rc
+//
 #define IDR_MAIN_MENU                   101
 #define IDC_STATUS						102
+
 #define IDC_EDIT                        1000
+
 #define ID_HELP_ABOUT                   40001
 #define ID_FILE_NEW                     40002
 #define ID_FILE_OPEN                    40003
